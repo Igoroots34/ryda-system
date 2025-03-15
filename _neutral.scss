@@ -1,0 +1,99 @@
+$ryda-blue: #0d6efd;
+$ryda-indigo: #6610f2;
+$ryda-purple: #6f42c1;
+$ryda-pink: #d63384;
+$ryda-red: #dc3545;
+$ryda-orange: #fd7e14;
+$ryda-yellow: #ffc107;
+$ryda-green: #198754;
+$ryda-teal: #20c997;
+$ryda-cyan: #0dcaf0;
+$ryda-black: #000;
+$ryda-white: #fff;
+$ryda-gray: #6c757d;
+$ryda-gray-dark: #343a40;
+
+// Tons de Cinza
+$ryda-gray-100: #e7e7e7;
+$ryda-gray-200: #d1d1d1;
+$ryda-gray-300: #b0b0b0;
+$ryda-gray-400: #888888;
+$ryda-gray-500: #6d6d6d;
+$ryda-gray-600: #5d5d5d;
+$ryda-gray-700: #4f4f4f;
+$ryda-gray-800: #454545;
+$ryda-gray-900: #3d3d3d;
+
+// Cores do Tema
+$ryda-primary: #292929;
+$ryda-secondary: #363636;
+$ryda-success: #1B5E20;
+$ryda-info: #0b516e;
+$ryda-warning: #7a5c04;
+$ryda-danger: #611a15;
+$ryda-light: #363636;
+$ryda-dark: #121212;
+
+// Tons RGB
+$ryda-primary-rgb: #{to-rgb($ryda-primary)};
+$ryda-secondary-rgb: #{to-rgb($ryda-secondary)};
+$ryda-success-rgb: #{to-rgb($ryda-success)};
+$ryda-info-rgb: #{to-rgb($ryda-info)};
+$ryda-warning-rgb: #{to-rgb($ryda-warning)};
+$ryda-danger-rgb: #{to-rgb($ryda-danger)};
+$ryda-light-rgb: #{to-rgb($ryda-light)};
+$ryda-dark-rgb: #{to-rgb($ryda-dark)};
+$ryda-white-rgb: #{to-rgb($ryda-white)};
+$ryda-black-rgb: #{to-rgb($ryda-black)};
+
+// Cores de Texto e Fundo
+$ryda-body-bg: $ryda-dark;
+$ryda-body-color: $ryda-gray-400;
+$ryda-emphasis-color: $ryda-white;
+
+$ryda-secondary-color: rgba($ryda-body-color, 0.75);
+$ryda-secondary-bg: $ryda-primary;
+
+$ryda-tertiary-color: rgba($ryda-body-color, 0.5);
+$ryda-tertiary-bg: $ryda-gray-900;
+
+$ryda-primary-text-emphasis: $ryda-gray-300;
+$ryda-secondary-text-emphasis: $ryda-gray-500;
+$ryda-success-text-emphasis: $ryda-green;
+$ryda-info-text-emphasis: $ryda-cyan;
+$ryda-warning-text-emphasis: $ryda-yellow;
+$ryda-danger-text-emphasis: $ryda-red;
+$ryda-light-text-emphasis: $ryda-gray-100;
+$ryda-dark-text-emphasis: $ryda-gray-400;
+
+$ryda-primary-bg-subtle: $ryda-primary;
+$ryda-secondary-bg-subtle: $ryda-secondary;
+$ryda-success-bg-subtle: $ryda-success;
+$ryda-info-bg-subtle: $ryda-info;
+$ryda-warning-bg-subtle: $ryda-warning;
+$ryda-danger-bg-subtle: $ryda-danger;
+$ryda-light-bg-subtle: $ryda-light;
+$ryda-dark-bg-subtle: $ryda-dark;
+
+$ryda-primary-border-subtle: $ryda-gray-700;
+$ryda-secondary-border-subtle: $ryda-gray-700;
+$ryda-success-border-subtle: $ryda-gray-700;
+$ryda-info-border-subtle: $ryda-gray-700;
+$ryda-warning-border-subtle: $ryda-gray-700;
+$ryda-danger-border-subtle: $ryda-gray-700;
+$ryda-light-border-subtle: $ryda-gray-700;
+$ryda-dark-border-subtle: $ryda-gray-900;
+
+$ryda-heading-color: inherit;
+$ryda-link-color: $ryda-cyan;
+$ryda-link-hover-color: $ryda-teal;
+$ryda-code-color: $ryda-pink;
+$ryda-highlight-color: $ryda-body-color;
+$ryda-highlight-bg: $ryda-secondary;
+$ryda-border-color: $ryda-gray-700;
+$ryda-border-color-translucent: rgba($ryda-white, 0.15);
+$ryda-form-valid-color: $ryda-green;
+$ryda-form-valid-border-color: $ryda-green;
+$ryda-form-invalid-color: $ryda-red;
+$ryda-form-invalid-border-color: $ryda-red;
+
