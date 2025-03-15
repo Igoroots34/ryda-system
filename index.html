@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard Financeiro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="saldo">
+        <h2>Saldo Total</h2>
+        <p class="valor">R$ 324.513,52</p>
+        <p class="aumento">Aumento de 22.4%</p>
+      </div>
+      <div class="despesas">
+        <h2>Despesa Total</h2>
+        <p class="valor">R$ 8.004,51</p>
+        <p class="aumento">Aumento de 5.4%</p>
+      </div>
+      <div class="cartoes">
+        <h2>Cartões de Crédito</h2>
+        <p class="cartao">5.764,00<br />Nome no Cartão<br />7780 02/32</p>
+        <p class="cartao">2.454,60<br />Nome no Cartão<br />09/34</p>
+      </div>
+      <div class="receita-despesa">
+        <h2>Receita vs Despesa</h2>
+        <canvas id="grafico-receita-despesa"></canvas>
+      </div>
+      <div class="gastos">
+        <h2>Gastos por Categoria</h2>
+        <canvas id="grafico-gastos"></canvas>
+      </div>
+      <div class="metas">
+        <h2>Metas Financeiras</h2>
+        <div class="meta">
+          <span>Casa</span>
+          <span>22 M</span>
+          <span>890.000,00</span>
+          <span>29%</span>
+        </div>
+        <div class="meta">
+          <span>Viagem</span>
+          <span>6 M</span>
+          <span>13.768,00</span>
+          <span>89%</span>
+        </div>
+        <div class="meta">
+          <span>Doações</span>
+          <span>6 M</span>
+          <span>4.000,00</span>
+          <span>76%</span>
+        </div>
+        <div class="meta">
+          <span>Investimentos</span>
+          <span>9 M</span>
+          <span>63.000,00</span>
+          <span>24%</span>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
