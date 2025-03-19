@@ -322,98 +322,125 @@
 .dashboard-content .dashboard-grid {
   padding: 24px;
   width: 100%;
-  height: 91vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 16px;
   grid-row-gap: 16px;
 }
-.dashboard-content .dashboard-grid .div1 {
+.dashboard-content .dashboard-grid .graph-1 {
   width: 100%;
   border-radius: 12px;
   border: 1px solid #4f4f4f;
   background-color: #121212;
   grid-area: 1/1/2/2;
+  padding: 17px;
+  display: grid;
+  justify-content: start;
+  align-items: stretch;
+  grid-template-rows: repeat(2, 1fr);
 }
-.dashboard-content .dashboard-grid .div2 {
+.dashboard-content .dashboard-grid .graph-1 .header {
+  margin: 0;
+  padding: 0;
+}
+.dashboard-content .dashboard-grid .graph-1 .header .header-title {
+  margin: 0;
+  color: #888888;
+}
+.dashboard-content .dashboard-grid .graph-1 .income {
+  display: inline;
+  align-content: end;
+  margin: 0;
+  padding: 0;
+}
+.dashboard-content .dashboard-grid .graph-1 .income .income-tag {
+  margin: 0;
+  padding: 0;
+  color: #198754;
+}
+.dashboard-content .dashboard-grid .graph-1 .income .income-value {
+  color: #198754;
+}
+.dashboard-content .dashboard-grid .graph-2 {
   width: 100%;
   border-radius: 12px;
   border: 1px solid #4f4f4f;
   background-color: #121212;
   grid-area: 1/2/2/3;
 }
-.dashboard-content .dashboard-grid .div3 {
+.dashboard-content .dashboard-grid .graph-3 {
   width: 100%;
   border-radius: 12px;
   border: 1px solid #4f4f4f;
   background-color: #121212;
   grid-area: 1/3/2/4;
 }
-.dashboard-content .dashboard-grid .div4 {
+.dashboard-content .dashboard-grid .graph-4 {
   width: 100%;
   border-radius: 12px;
   border: 1px solid #4f4f4f;
   background-color: #121212;
   grid-area: 1/4/2/5;
 }
-.dashboard-content .dashboard-grid .div5 {
+.dashboard-content .dashboard-grid .graph-5 {
   width: 100%;
   border-radius: 12px;
   border: 1px solid #4f4f4f;
   background-color: #121212;
   grid-area: 2/1/4/3;
 }
-.dashboard-content .dashboard-grid .div6 {
+.dashboard-content .dashboard-grid .graph-6 {
   width: 100%;
   border-radius: 12px;
   border: 1px solid #4f4f4f;
   background-color: #121212;
   grid-area: 2/3/4/4;
 }
-.dashboard-content .dashboard-grid .div7 {
+.dashboard-content .dashboard-grid .graph-7 {
   width: 100%;
   border-radius: 12px;
   border: 1px solid #4f4f4f;
   background-color: #121212;
   grid-area: 2/4/3/5;
 }
-.dashboard-content .dashboard-grid .div8 {
+.dashboard-content .dashboard-grid .graph-8 {
   width: 100%;
   border-radius: 12px;
   border: 1px solid #4f4f4f;
   background-color: #121212;
   grid-area: 3/4/4/5;
 }
-.dashboard-content .dashboard-grid .div9 {
+.dashboard-content .dashboard-grid .graph-9 {
   width: 100%;
   border-radius: 12px;
   border: 1px solid #4f4f4f;
   background-color: #121212;
   grid-area: 4/1/6/2;
 }
-.dashboard-content .dashboard-grid .div10 {
+.dashboard-content .dashboard-grid .graph-10 {
   width: 100%;
   border-radius: 12px;
   border: 1px solid #4f4f4f;
   background-color: #121212;
   grid-area: 4/2/5/3;
 }
-.dashboard-content .dashboard-grid .div11 {
+.dashboard-content .dashboard-grid .graph-11 {
   width: 100%;
   border-radius: 12px;
   border: 1px solid #4f4f4f;
   background-color: #121212;
   grid-area: 5/2/6/3;
 }
-.dashboard-content .dashboard-grid .div12 {
+.dashboard-content .dashboard-grid .graph-12 {
   width: 100%;
   border-radius: 12px;
   border: 1px solid #4f4f4f;
   background-color: #121212;
   grid-area: 4/3/6/4;
 }
-.dashboard-content .dashboard-grid .div13 {
+.dashboard-content .dashboard-grid .graph-13 {
   width: 100%;
   border-radius: 12px;
   border: 1px solid #4f4f4f;
