@@ -1,15 +1,6 @@
 @import "neutral";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-* {
-    font-family: 'Inter', sans-serif;
-    padding: 0 auto;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-
-body {
+.login-page {
     background-color: $ryda-body-bg;
     display: flex;
     justify-content: center;
@@ -24,7 +15,7 @@ body {
     width: 60rem;
     padding: 16px;
     border-radius: 24px;
-    background-color: $ryda-secondary-bg;
+    background-color: $ryda-sub-body-bg;
     display: flex;
 
     .login-form {
@@ -35,7 +26,21 @@ body {
         margin: 0;
         border-radius: 12px;
         padding: 0 64px;
-        background-color: rgba($ryda-black, 0.3);
+        background-color: $ryda-secondary-bg-subtle;
+
+        .login-brand {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+
+
+            .logo {
+                width: 94px;
+                margin-bottom: 32px ;
+            }
+        }
 
         .login-header {
             text-align: center;
@@ -131,7 +136,7 @@ body {
             display: flex;
             justify-content: center;
             margin: 0;
-            margin-top: 110px;
+            margin-top: 90px;
 
             a {
                 margin: 0;
@@ -151,24 +156,39 @@ body {
         margin-left: 16px;
         padding: 24px;
         border-radius: 12px;
-        color: $ryda-emphasis-color;
-        background-color: $ryda-dark-bg-subtle;
+        color: $ryda-primary;
+        background-color: $ryda-white;
         width: 100%;
         display: flex;
         align-items: center;
+        justify-content: center;
 
         .text-insights {
             top: 50%;
             left: 50%;
             margin: auto;
-            text-align: start;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
 
             p {
                 text-align: center;
-                font-size: 32px;
+                font-size: 24px;
                 margin-bottom: 24px;
                 font-weight: 600;
             }
+
+            .image-insights {
+                width: 80%;
+                margin: 0;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            
         }
     }
 }

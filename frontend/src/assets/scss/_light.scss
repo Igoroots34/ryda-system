@@ -1,0 +1,99 @@
+// Cores originais (mantidas)
+$ryda-blue: #0d6efd;
+$ryda-indigo: #6610f2;
+$ryda-purple: #6f42c1;
+$ryda-pink: #d63384;
+$ryda-red: #dc3545;
+$ryda-orange: #fd7e14;
+$ryda-yellow: #ffc107;
+$ryda-green: #198754;
+$ryda-teal: #20c997;
+$ryda-cyan: #0dcaf0;
+$ryda-black: #000;
+$ryda-white: #fff;
+$ryda-gray: #6c757d;
+$ryda-gray-dark: #343a40;
+
+// Tons de Cinza (ajustados para o modo escuro)
+$ryda-gray-100: #424242;
+$ryda-gray-200: #4a4a4a;
+$ryda-gray-300: #555555;
+$ryda-gray-400: #777777;
+$ryda-gray-500: #9e9e9e;
+$ryda-gray-600: #bdbdbd;
+$ryda-gray-700: #d1d1d1;
+$ryda-gray-800: #e0e0e0;
+$ryda-gray-900: #eeeeee;
+
+// Cores do Tema (Modo Escuro com padrão original)
+$ryda-primary: $ryda-gray-800; // Cinza claro como primário
+$ryda-secondary: $ryda-gray-700; // Cinza mais claro como secundário
+$ryda-success: $ryda-green; // Verde mantido
+$ryda-info: $ryda-cyan; // Ciano mantido
+$ryda-warning: $ryda-yellow; // Amarelo mantido
+$ryda-danger: $ryda-red; // Vermelho mantido
+$ryda-light: #212121; // Fundo escuro
+$ryda-dark: $ryda-gray-100; // Cinza claro como texto
+
+// Tons RGB (Modo Escuro)
+$ryda-primary-rgb: #{to-rgb($ryda-primary)};
+$ryda-secondary-rgb: #{to-rgb($ryda-secondary)};
+$ryda-success-rgb: #{to-rgb($ryda-success)};
+$ryda-info-rgb: #{to-rgb($ryda-info)};
+$ryda-warning-rgb: #{to-rgb($ryda-warning)};
+$ryda-danger-rgb: #{to-rgb($ryda-danger)};
+$ryda-light-rgb: #{to-rgb($ryda-light)};
+$ryda-dark-rgb: #{to-rgb($ryda-dark)};
+$ryda-white-rgb: #{to-rgb($ryda-white)};
+$ryda-black-rgb: #{to-rgb($ryda-black)};
+
+// Cores de Texto e Fundo (Modo Escuro)
+$ryda-body-bg: $ryda-light;
+$ryda-body-color: $ryda-dark;
+$ryda-emphasis-color: $ryda-white;
+
+$ryda-secondary-color: rgba($ryda-body-color, 0.75);
+$ryda-secondary-bg: $ryda-gray-dark;
+
+$ryda-tertiary-color: rgba($ryda-body-color, 0.5);
+$ryda-tertiary-bg: $ryda-black;
+
+$ryda-primary-text-emphasis: lighten($ryda-blue, 20%);
+$ryda-secondary-text-emphasis: lighten($ryda-gray-500, 20%);
+$ryda-success-text-emphasis: lighten($ryda-green, 20%);
+$ryda-info-text-emphasis: lighten($ryda-cyan, 20%);
+$ryda-warning-text-emphasis: lighten($ryda-yellow, 20%);
+$ryda-danger-text-emphasis: lighten($ryda-red, 20%);
+$ryda-light-text-emphasis: $ryda-gray-400;
+$ryda-dark-text-emphasis: $ryda-gray-800;
+
+$ryda-primary-bg-subtle: darken($ryda-primary, 40%);
+$ryda-secondary-bg-subtle: darken($ryda-secondary, 40%);
+$ryda-success-bg-subtle: darken($ryda-success, 40%);
+$ryda-info-bg-subtle: darken($ryda-info, 40%);
+$ryda-warning-bg-subtle: darken($ryda-warning, 40%);
+$ryda-danger-bg-subtle: darken($ryda-danger, 40%);
+$ryda-light-bg-subtle: $ryda-gray-800;
+$ryda-dark-bg-subtle: $ryda-gray-200;
+
+$ryda-primary-border-subtle: $ryda-gray-600;
+$ryda-secondary-border-subtle: $ryda-gray-600;
+$ryda-success-border-subtle: $ryda-gray-600;
+$ryda-info-border-subtle: $ryda-gray-600;
+$ryda-warning-border-subtle: $ryda-gray-600;
+$ryda-danger-border-subtle: $ryda-gray-600;
+$ryda-light-border-subtle: $ryda-gray-600;
+$ryda-dark-border-subtle: $ryda-gray-300;
+
+$ryda-heading-color: inherit;
+$ryda-link-color: $ryda-info;
+$ryda-link-hover-color: lighten($ryda-info, 10%);
+$ryda-code-color: $ryda-pink;
+$ryda-highlight-color: $ryda-white;
+$ryda-highlight-bg: #333333;
+$ryda-border-color: $ryda-gray-600;
+$ryda-border-color-translucent: rgba($ryda-white, 0.15);
+$ryda-form-valid-color: $ryda-success;
+$ryda-form-valid-border-color: $ryda-success;
+$ryda-form-invalid-color: $ryda-danger;
+$ryda-form-invalid-border-color: $ryda-danger;

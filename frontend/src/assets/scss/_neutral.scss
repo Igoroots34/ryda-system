@@ -47,7 +47,8 @@ $ryda-white-rgb: #{to-rgb($ryda-white)};
 $ryda-black-rgb: #{to-rgb($ryda-black)};
 
 // Cores de Texto e Fundo
-$ryda-body-bg: $ryda-dark;
+$ryda-body-bg: $ryda-black;
+$ryda-sub-body-bg: $ryda-dark;
 $ryda-body-color: $ryda-gray-400;
 $ryda-emphasis-color: $ryda-white;
 
