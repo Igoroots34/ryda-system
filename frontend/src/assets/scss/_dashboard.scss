@@ -21,6 +21,15 @@
             }
 
             .dashboard-menu {
+                
+                .dashboard-list {
+                    display: inline;
+
+                    li {
+                        display: inline;
+                    }
+                }
+
                 .menu-button {
                     background-color: transparent;
                     color: $ryda-primary-text-emphasis;

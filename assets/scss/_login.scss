@@ -1,0 +1,194 @@
+@import "neutral";
+
+.login-page {
+    background-color: $ryda-body-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    width: 60rem;
+    padding: 16px;
+    border-radius: 24px;
+    background-color: $ryda-sub-body-bg;
+    display: flex;
+
+    .login-form {
+        display: flex;
+        align-items: center;
+        width: 26rem;
+        height: 34rem;
+        margin: 0;
+        border-radius: 12px;
+        padding: 0 64px;
+        background-color: $ryda-secondary-bg-subtle;
+
+        .login-brand {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+
+
+            .logo {
+                width: 94px;
+                margin-bottom: 32px ;
+            }
+        }
+
+        .login-header {
+            text-align: center;
+            color: $ryda-light-text-emphasis;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 24px;
+
+            h1 {
+                font-weight: 600;
+                margin-bottom: 12px;
+            }
+
+            h4 {
+                font-weight: 400;
+            }
+        }
+
+        input {
+            margin: 12px 0;
+            width: 100%;
+            border-radius: 8px;
+            border: none;
+            background-color: $ryda-body-bg;
+            padding: 8px 16px;
+            border: 1px solid $ryda-border-color-translucent;
+        }
+
+        .social-login {
+            display: flex;
+
+            align-items: center;
+
+            .social-buttons {
+                color: $ryda-light-text-emphasis;
+                cursor: pointer;
+                position: relative;
+                display: flex;
+                align-items: center;
+                border-radius: 8px;
+                background-color: $ryda-gray-700;
+                border: none;
+                margin: 2px;
+                width: 68px;
+                height: 44px;
+                transition: all 300ms ease-in-out;
+
+                &:hover {
+                    background-color: $ryda-gray-900;
+
+                    i {
+                        font-size: 15px;
+                    }
+                }
+
+            }
+        }
+
+        .divider {
+            color: $ryda-border-color-translucent;
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+
+            .start {
+                width: 100%;
+                margin-right: 10px;
+
+                hr {
+                    border: 1px solid $ryda-border-color-translucent;
+                }
+            }
+
+            p {
+                display: flex;
+            }
+
+            .end {
+
+                width: 100%;
+                margin-left: 10px;
+
+                hr {
+                    border: 1px solid $ryda-border-color-translucent;
+                }
+            }
+        }
+
+        .login-footer {
+            color: $ryda-dark-text-emphasis;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            margin-top: 90px;
+
+            a {
+                margin: 0;
+                font-size: 12px;
+                color: $ryda-dark-text-emphasis;
+                text-decoration: none;
+
+                &:hover {
+                    color: $ryda-gray-300;
+                }
+            }
+
+        }
+    }
+
+    .login-insights {
+        margin-left: 16px;
+        padding: 24px;
+        border-radius: 12px;
+        color: $ryda-primary;
+        background-color: $ryda-white;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .text-insights {
+            top: 50%;
+            left: 50%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+
+            p {
+                text-align: center;
+                font-size: 24px;
+                margin-bottom: 24px;
+                font-weight: 600;
+            }
+
+            .image-insights {
+                width: 80%;
+                margin: 0;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            
+        }
+    }
+}

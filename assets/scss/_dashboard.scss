@@ -1,0 +1,301 @@
+@import "neutral";
+
+.dashboard {
+    background-color: $ryda-body-bg;
+
+    .dashboard-container {
+        width: 100%;
+        padding: 24px;
+
+        .dashboard-header {
+            display: flex;
+            align-items: center;
+
+            .dashboard-brand {
+                margin: 0;
+
+                .logo {
+                    width: 84px;
+                    cursor: pointer;
+                }
+            }
+
+            .dashboard-menu {
+
+                .dashboard-list {
+                    list-style: none;
+                    display: inline-flex;
+                }
+
+                .menu-button {
+                    font-weight: 500;
+                    font-size: 14px;
+                    text-decoration: none;
+                    color: $ryda-secondary-text-emphasis;
+                    margin-right: 6px;
+                    transition: 0.4s;
+
+                    &:hover {
+                        color: $ryda-white;
+                    }
+                }
+            }
+
+            .dashboard-profile {
+                position: fixed;
+                top: 20px;
+                right: 30px;
+
+                .profile-image {
+                    position: relative;
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 100%;
+                    overflow: hidden;
+                    cursor: pointer;
+
+                    img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .dashboard-dropdown {
+                    position: absolute;
+                    top: 45px;
+                    right: -20px;
+                    background: $ryda-sub-body-bg;
+                    width: 200px;
+                    box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+                    border-radius: 12px;
+                    transition: all 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+                    visibility: hidden;
+                    opacity: 0;
+
+                    &.active {
+                        top: 45px;
+                        visibility: visible;
+                        opacity: 1;
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+
+                        top: -5px;
+                        right: 28px;
+                        width: 20px;
+                        height: 20px;
+                        background: $ryda-sub-body-bg;
+                        transform: rotate(45deg);
+                    }
+
+                    h3 {
+                        width: 100%;
+                        text-align: center;
+                        font-size: 12px;
+                        padding-top: 20px;
+                        font-weight: 500;
+                        color: $ryda-primary-text-emphasis;
+                        line-height: 1.5em;
+                    }
+
+                    ul {
+                        padding: 16px;
+
+                        li {
+                            list-style: none;
+                            padding: 6px 0;
+                            border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+                            i {
+                                margin-right: 6px;
+                            }
+
+                            a {
+                                text-decoration: none;
+                                font-size: 12px;
+                                color: $ryda-secondary-text-emphasis;
+                                font-weight: 400;
+                                transition: all 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+                                &:hover {
+                                    background-color: $ryda-secondary-bg;
+                                    padding: 3px 6px;
+                                    border-radius: 6px;
+                                    color: $ryda-primary-text-emphasis;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dashboard-content {
+
+    h2 {
+        font-weight: 600;
+        color: $ryda-body-color;
+        padding: 16px 24px;
+    }
+
+    .dashboard-filters {
+        padding: 0 24px;
+        
+        .filter-button {
+            display: inline-flex;
+            align-items: center;
+            
+
+            h5 {
+                margin-right: 5px;
+                color: $ryda-body-color;
+            }
+
+            .filters {
+                cursor: pointer;
+                margin-right: 5px;
+                font-weight: 700;
+                color: $ryda-emphasis-color;
+                background-color: transparent;
+                border-radius: 12px;
+                border: 1px solid $ryda-light;
+                padding: 8px 16px;
+                transition: 0.5s;
+
+                &:hover {
+                    border: 1px solid $ryda-emphasis-color;
+                    color: $ryda-light;
+                    background-color: $ryda-emphasis-color;
+
+                    &.active {
+                        color: $ryda-light;
+                    background-color: $ryda-emphasis-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .dashboard-grid {
+        padding: 24px;
+        width: 100%;
+        height: 91vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+    
+        .div1 {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid $ryda-primary-border-subtle;
+            background-color: $ryda-sub-body-bg;
+            grid-area: 1 / 1 / 2 / 2;
+        }
+        
+        .div2 {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid $ryda-primary-border-subtle;
+            background-color: $ryda-sub-body-bg;
+            grid-area: 1 / 2 / 2 / 3;
+        }
+        
+        .div3 {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid $ryda-primary-border-subtle;
+            background-color: $ryda-sub-body-bg;
+            grid-area: 1 / 3 / 2 / 4;
+        }
+        
+        .div4 {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid $ryda-primary-border-subtle;
+            background-color: $ryda-sub-body-bg;
+            grid-area: 1 / 4 / 2 / 5;
+        }
+        
+        .div5 {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid $ryda-primary-border-subtle;
+            background-color: $ryda-sub-body-bg;
+            grid-area: 2 / 1 / 4 / 3;
+        }
+        
+        .div6 {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid $ryda-primary-border-subtle;
+            background-color: $ryda-sub-body-bg;
+            grid-area: 2 / 3 / 4 / 4;
+        }
+        
+        .div7 {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid $ryda-primary-border-subtle;
+            background-color: $ryda-sub-body-bg;
+            grid-area: 2 / 4 / 3 / 5;
+        }
+        
+        .div8 {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid $ryda-primary-border-subtle;
+            background-color: $ryda-sub-body-bg;
+            grid-area: 3 / 4 / 4 / 5;
+        }
+        
+        .div9 {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid $ryda-primary-border-subtle;
+            background-color: $ryda-sub-body-bg;
+            grid-area: 4 / 1 / 6 / 2;
+        }
+        
+        .div10 {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid $ryda-primary-border-subtle;
+            background-color: $ryda-sub-body-bg;
+            grid-area: 4 / 2 / 5 / 3;
+        }
+        
+        .div11 {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid $ryda-primary-border-subtle;
+            background-color: $ryda-sub-body-bg;
+            grid-area: 5 / 2 / 6 / 3;
+        }
+        
+        .div12 {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid $ryda-primary-border-subtle;
+            background-color: $ryda-sub-body-bg;
+            grid-area: 4 / 3 / 6 / 4;
+        }
+        
+        .div13 {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid $ryda-primary-border-subtle;
+            background-color: $ryda-sub-body-bg;
+            grid-area: 4 / 4 / 6 / 5;
+        }
+    }
+}
